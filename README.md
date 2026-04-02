@@ -27,7 +27,7 @@ Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním 
    Otevřete terminál v dané složce a nainstalujte requirements pomocí správce balíčků `pip`:
    ```bash
    pip install -r requirements.txt
-````
+
 ---
 
 ## Spuštění projektu
