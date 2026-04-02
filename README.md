@@ -4,7 +4,7 @@ Tento projekt vznikl jako **třetí projekt** v rámci kurzu **Datový analytik 
 
 ---
 
-## 📝 Popis projektu
+## Popis projektu
 Cílem projektu je vytvořit nástroj, který pro zvolený územní celek (okres) extrahuje výsledky voleb a uloží je do formátu `.csv`. Program automaticky prochází odkazy pro jednotlivé obce, sbírá údaje o volební účasti a počty hlasů pro všechny kandidující politické strany.
 
 **Výstupní soubor obsahuje:**
@@ -15,7 +15,7 @@ Cílem projektu je vytvořit nástroj, který pro zvolený územní celek (okres
 
 ---
 
-## ⚙️ Instalace a požadavky
+## Instalace a požadavky
 Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním je nutné nainstalovat externí knihovny definované v souboru `requirements.txt`.
 
 **Postup instalace:**
