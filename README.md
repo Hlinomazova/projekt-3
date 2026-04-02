@@ -30,8 +30,7 @@ Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním 
 ````
 
 -----
-
-## Spuštění projektu
+## Instalace a požadavky
 
 Skript vyžaduje dva povinné argumenty zadané při spuštění v příkazové řádce:
 
