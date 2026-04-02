@@ -31,7 +31,7 @@ Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním 
 
 -----
 
-## 🚀 Spuštění projektu
+## Spuštění projektu
 
 Skript vyžaduje dva povinné argumenty zadané při spuštění v příkazové řádce:
 
@@ -46,7 +46,7 @@ python main.py "[https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumn
 
 -----
 
-## 📊 Ukázka průběhu a výsledků
+## Ukázka průběhu a výsledků
 
 ### Průběh v terminálu:
 
