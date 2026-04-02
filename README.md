@@ -1,11 +1,11 @@
 # Projekt 3: Election Scraper
 
-Tento projekt vznikl jako **třetí projekt** v rámci kurzu **Datový analytik s Pythonem**. Skript slouží k automatizovanému sběru dat (scrapingu) výsledků voleb do Poslanecké sněmovny z roku 2017 z oficiálního webu [volby.cz](https://www.volby.cz/).
+Tento projekt vznikl jako **třetí projekt** v rámci kurzu **Datový analytik s Pythonem**. Skript slouží ke sběru dat (scrapingu) výsledků voleb do Poslanecké sněmovny z roku 2017 z oficiálního webu [volby.cz](https://www.volby.cz/).
 
 ---
 
 ## 📝 Popis projektu
-Cílem projektu je vytvořit nástroj, který pro zvolený územní celek (okres) extrahuje výsledky voleb a uloží je do formátu `.csv`. Program automaticky prochází odkazy pro jednotlivé obce, sbírá statistické údaje o volební účasti a počty hlasů pro všechny kandidující politické strany.
+Cílem projektu je vytvořit nástroj, který pro zvolený územní celek (okres) extrahuje výsledky voleb a uloží je do formátu `.csv`. Program automaticky prochází odkazy pro jednotlivé obce, sbírá údaje o volební účasti a počty hlasů pro všechny kandidující politické strany.
 
 **Výstupní soubor obsahuje:**
 * **Kód obce** a **Název obce**.
@@ -24,7 +24,7 @@ Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním 
    Uložte soubory `main.py` a `requirements.txt` do své pracovní složky.
 
 2. **Instalace knihoven:**
-   Otevřete terminál v dané složce a nainstalujte závislosti pomocí správce balíčků `pip`:
+   Otevřete terminál v dané složce a nainstalujte requirements pomocí správce balíčků `pip`:
    ```bash
    pip install -r requirements.txt
 ````
