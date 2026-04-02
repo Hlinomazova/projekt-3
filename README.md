@@ -1,6 +1,6 @@
 # Election Scraper
 
-Tento skript slouží k automatizovanému stahování výsledků voleb do Poslanecké sněmovny z roku 2017 z webu [volby.cz](https://www.volby.cz/). Projekt byl vytvořen jako závěrečná práce pro **Python Akademii od Engeta**.
+Tento skript slouží k automatizovanému stahování výsledků voleb do Poslanecké sněmovny z roku 2017 z webu [volby.cz](https://www.volby.cz/). Projekt byl vytvořen jako závěrežná práce v práce pro **Python Akademii od Engeta**.
 
 ---
 
