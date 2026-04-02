@@ -28,8 +28,9 @@ Ke spuštění projektu je vyžadován **Python 3**. Před prvním spuštěním 
    ```bash
    pip install -r requirements.txt
 ````
+---
 
-## Instalace a požadavky
+## Spuštění projektu
 
 Skript vyžaduje dva povinné argumenty zadané při spuštění v příkazové řádce:
 
