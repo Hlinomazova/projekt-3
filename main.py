@@ -17,7 +17,7 @@ def get_soup(url: str):
         return None
 
 def get_town_data(town_url: str) -> list:
-    """Vytáhne statistiky a hlasy stran z detailu konkrétní obce."""
+    """Extrahuje statisti stran z detailu konkrétní obce."""
     soup = get_soup(town_url)
     if not soup:
         return []
@@ -29,7 +29,7 @@ def get_town_data(town_url: str) -> list:
     
     results = [registered, envelopes, valid]
     
-    # Hledáme pole s třídou 'cislo' a hlavičkami pro hlasy stran
+    # Extrahuje data z buněk, které obsahují počty hlasů pro jednotlivé strany.
     party_votes = soup.find_all("td", {"class": "cislo", "headers": ["t1sa2", "t1sb3", "t2sa2", "t2sb3"]})
     
     for vote in party_votes:
@@ -65,7 +65,7 @@ def main():
     if not soup:
         return
 
-    # Najdeme všechny řádky v hlavní tabulce okresu
+    # Najde všechny řádky v hlavní tabulce okresu
     rows = soup.find_all("tr")
     
     with open(output_file, mode="w", encoding="utf-8", newline="") as f:
@@ -75,7 +75,7 @@ def main():
         for row in rows:
             cells = row.find_all("td")
             
-            # Identifikace obce podle toho, zda první buňka obsahuje kód (číslo)
+            # Identifikuje obce podle toho, zda první buňka obsahuje kód (číslo)
             if len(cells) > 2 and cells[0].text.strip().isdigit():
                 town_code = cells[0].text.strip()
                 town_name = cells[1].text.strip()
@@ -87,7 +87,7 @@ def main():
                 full_town_url = base_url + link.get("href")
                 town_data = get_town_data(full_town_url)
 
-                # Vytvoření hlavičky CSV pouze jednou u první zpracované obce
+                #  Generuje hlavičku CSV souboru při zpracování první nalezené obce
                 if not header_written:
                     parties = get_party_names(full_town_url)
                     header = ["code", "location", "registered", "envelopes", "valid"] + parties
