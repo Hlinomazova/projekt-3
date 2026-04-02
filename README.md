@@ -40,7 +40,7 @@ Skript vyžaduje dva povinné argumenty zadané při spuštění v příkazové 
 ### Příklad spuštění (pro okres Benešov):
 
 ```bash
-python main.py "[https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101](https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101)" vysledky_benesov.csv
+python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101" vysledky_benesov.csv
 ```
 
 
@@ -50,7 +50,7 @@ python main.py "[https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumn
 
 Během stahování program informuje o aktuálně zpracovávané obci:
 
-> **Stahuji data z adresy:** https://www.google.com/search?q=https://www.volby.cz/pls/ps2017nss/ps32...  
+> **Stahuji data z adresy:** https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101  
 > **Zpracovávám obec:** Benešov  
 > **Zpracovávám obec:** Bystřice  
 > ...  
